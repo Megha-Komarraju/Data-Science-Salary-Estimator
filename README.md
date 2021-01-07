@@ -7,7 +7,7 @@ Created a tool that estimates data science salaries (MAE ~ $ 11K) to help data s
 * Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model.
 * Built a client facing API using flask
 ## Code and Resources Used
-Python Version: 3.7
+Python Version: 3.7  
 Packages: pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle  
 For Web Framework Requirements: pip install -r requirements.txt  
 Scraper Github: https://github.com/arapfaik/scraping-glassdoor-selenium  
@@ -18,20 +18,20 @@ https://www.youtube.com/playlist?list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t
 
 Web Scraping
 Tweaked the web scraper github repo (above) to scrape 1000 job postings from glassdoor.com. With each job, we got the following:
--Job title
--Salary Estimate
--Job Description
--Rating
--Company
--Location
--Company Headquarters
--Company Size
--Company Founded Date
--Type of Ownership
--Industry
--Sector
--Revenue
--Competitors
+- Job title
+- Salary Estimate
+- Job Description
+- Rating
+- Company
+- Location
+- Company Headquarters
+- Company Size
+- Company Founded Date
+- Type of Ownership
+- Industry
+- Sector
+- Revenue
+- Competitors
 
 ## Data Cleaning
 After scraping the data, the following changes were made to structure the data and following variablesn were created:
@@ -43,13 +43,13 @@ After scraping the data, the following changes were made to structure the data a
 * Added a column for if the job was at the company’s headquarters
 * Transformed founded date into age of company
 * Made columns for if different skills were listed in the job description:
--Python
--R
--Excel
--AWS
--Spark
--Column for simplified job title and Seniority
--Column for description length
+    * Python
+    * R
+    * Excel
+    * AWS
+    * Spark
+- Column for simplified job title and Seniority
+- Column for description length
 
 ## Model Building
 First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%.
